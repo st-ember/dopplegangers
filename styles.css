@@ -13,25 +13,49 @@ a {
     text-decoration: none;
 }
 
-
-/* index */
-.index__button {
-    background-color: rgb(255, 181, 43);
-    border: none;
-    border-radius: 2rem;
-    font-size: 3rem;
-    padding: 0.5rem;
-    width: 350px;
-}
-
-.index__wrapper {
+/* health */
+.health__wrapper {
     display: grid;
     grid-template-rows: repeat(1fr);
-    justify-items: center;
-    row-gap: 2rem;
-    margin-top: 3rem;
+    gap: 2rem;
+    width: 360px;
+    margin: 0 auto;
+    place-items: center;
 }
 
+.health__wrapper > h1 {
+    text-align: center;
+}
+
+.character__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    border-radius: 7px;
+    background: rgb(36, 108, 190);
+}
+
+.character__wrapper > p {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.health-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.character__wrapper > input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 4rem;
+    text-align: center;
+}
 
 /* battle */
 .battle__wrapper > h1, h2 {
@@ -43,10 +67,9 @@ a {
     display: grid;
     grid-template-rows: 1fr 1fr;
     max-width: 500px;
-    background-color: rgb(165, 83, 42);
-    padding: 2rem;
+    background-color: rgb(94, 59, 41);
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 7px;
 }
 
 .grid__wrapper {
@@ -103,58 +126,13 @@ input::-webkit-inner-spin-button {
 }
 
 
-/* health */
-.health__wrapper {
-    display: grid;
-    grid-template-rows: repeat(1fr);
-    gap: 2rem;
-    width: 100%;
-    margin: 0 auto;
-    place-items: center;
-}
-
-.health__wrapper > h1 {
-    text-align: center;
-}
-
-.character__wrapper {
-    display: flex;
-    justify-content: center;
-    padding: .5rem;
-    width: 400px;
-    border-radius: 1rem;
-    background: rgb(197, 108, 221);
-}
-
-.character__wrapper > p {
-    font-size: 2rem;
-    margin-right: 10px;
-}
-
-.health-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.character__wrapper > input {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    width: 4rem;
-    text-align: center;
-}
-
 
 /* poison */
 .poison__wrapper {
     background: rgb(153, 195, 153);
-    width: 600px;
+    width: 360px;
     margin: 30px auto;
-    border-radius: 1rem;
+    border-radius: 7px;
 }
 
 .poison__wrapper div, label {
@@ -162,18 +140,31 @@ input::-webkit-inner-spin-button {
 }
 
 .add__poison__food {
+    display: grid;
+    grid-template-rows: 1fr repeat();
+    margin: 10px auto;
+    width: 400px;
+}
+
+.food__number__wrapper {
     display: flex;
     justify-content: center;
+    margin: auto;
+    width: 300px;
     align-items: center;
-    margin: 10px auto;
-    width: 600px;
 }
 
 #food__number {
-    height: 20px;
-    width: 70px;
-    margin: 20px;
+    height: 30px;
+    width: 200px;
+    margin: 20px auto;
     color: black;
+}
+
+.poison__row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .poison__check {
@@ -190,6 +181,7 @@ input::-webkit-inner-spin-button {
     color: black;
     height: 25px;
     width: 50px;
+    margin: 20px auto;
 }
 
 .added__section {
@@ -273,17 +265,14 @@ input::-webkit-inner-spin-button {
 
 /* sailing */
 .sailing__wrapper {
-    margin: auto;
-    margin-top: 4rem;
-    width: 70vw;
-    height: 30vw;
+    margin: 20px auto;
+    width: 350px;
     background-color: rgb(53, 82, 160);
-    border-radius: .75rem;
-    font-family: sans-serif;
+    border-radius: 7px;
 }
 
 .sailing__wrapper > h1 {
-    padding: 1rem;
+    padding-top: 5px;
     text-align: center;
     color: white;
     font-size: 2.5rem;
@@ -291,7 +280,7 @@ input::-webkit-inner-spin-button {
 
 .sailing__btn__wrapper {
     width: 50%;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
 }
@@ -313,4 +302,9 @@ input::-webkit-inner-spin-button {
     text-align: right;
     text-align: center;
     padding-left: 14px;
+}
+
+.end__card {
+    width: 350px;
+    height: 100px;
 }

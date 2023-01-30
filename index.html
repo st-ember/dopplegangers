@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>霧海同行</title>
+    <title>霧海同行機制App</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/926771b787.js" crossorigin="anonymous"></script>
 </head>
@@ -113,14 +113,19 @@
 <!-- poison -->
     <div class="poison__wrapper">
         <div class="add__poison__food">
-            <label for="food__number">編號</label>
-            <input type="text" id="food__number" name="food__number">
-            <div class="red">紅色莖塊</div>
-            <input type="checkbox" class="poison__check" id="red__check">
-            <div class="green">綠色莖塊</div>
-            <input type="checkbox" class="poison__check" id="green__check">
-            <div class="purple">紫色漿果</div>
-            <input type="checkbox" class="poison__check" id="purple__check">
+            <div class="food__number__wrapper">
+                <label for="food__number">編號</label>
+                <input type="text" id="food__number" name="food__number">
+            </div>
+    
+            <div class="poison__row2">
+                <div class="red">紅色莖塊</div>
+                <input type="checkbox" class="poison__check" id="red__check">
+                <div class="green">綠色莖塊</div>
+                <input type="checkbox" class="poison__check" id="green__check">
+                <div class="purple">紫色漿果</div>
+                <input type="checkbox" class="poison__check" id="purple__check">
+            </div>
             <button id="poison__add__button">加入</button>
         </div>
 
@@ -164,14 +169,14 @@
             <button id="bondage__add__button">綁在一起</button>
         </div>
 
-        <div class="added__section" data-id="added__bondage__section">
+        <!-- <div class="added__section" data-id="added__bondage__section">
             <div class="added__bondage">
                 <div class="bound__person1">恩里克</div>
                 <div class="bound__with">鐵鍊</div>
                 <div class="bound__person2">亨利</div>
                 <button class="bondage__delete__button">刪除</button>
             </div>
-        </div>
+        </div> -->
     </div>
 
 
@@ -184,6 +189,8 @@
             <button class="sailing__button"><i class="fa-solid fa-plus" data-id="plus-button"></i></button>
         </div>
     </div>
+
+    <div class="end__card"></div>
     
     <script src="script.js"></script>
 </body>
