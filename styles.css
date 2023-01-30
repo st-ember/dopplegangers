@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* index */
+.index__button {
+    background-color: rgb(255, 181, 43);
+    border: none;
+    border-radius: 2rem;
+    font-size: 3rem;
+    padding: 0.5rem;
+    width: 350px;
+}
+
+.index__wrapper {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    justify-items: center;
+    row-gap: 2rem;
+    margin-top: 3rem;
+}
+
+
+/* battle */
+.battle__wrapper > h1, h2 {
+    text-align: center;
+}
+
+.player__wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 500px;
+    background-color: rgb(165, 83, 42);
+    padding: 2rem;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.grid__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player__wrapper > p {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.player__wrapper > input {
+    height: 2rem;
+}
+
+.player__wrapper ::placeholder {
+    color: white;
+}
+
+.player__name {
+    color: black;
+    font-size: 1.2rem;
+    max-height: 1.5rem;
+    max-width: 6rem;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.grid__wrapper > p {
+    text-align: center;
+}
+
+.total__title {
+    font-size: 1.3rem;
+}
+
+.dice__number, 
+.weapon,
+.damage,
+.total {
+    width: 2rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* number input no arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* health */
+.health__wrapper {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    place-items: center;
+}
+
+.health__wrapper > h1 {
+    text-align: center;
+}
+
+.character__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    width: 400px;
+    border-radius: 1rem;
+    background: rgb(197, 108, 221);
+}
+
+.character__wrapper > p {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.health-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.character__wrapper > input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 4rem;
+    text-align: center;
+}
+
+
+/* poison */
+.poison__wrapper {
+    background: rgb(153, 195, 153);
+    width: 600px;
+    margin: 30px auto;
+    border-radius: 1rem;
+}
+
+.poison__wrapper div, label {
+    color: black;
+}
+
+.add__poison__food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 600px;
+}
+
+#food__number {
+    height: 20px;
+    width: 70px;
+    margin: 20px;
+    color: black;
+}
+
+.poison__check {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.poison__check:hover {
+    cursor: pointer;
+}
+
+#poison__add__button {
+    color: black;
+    height: 25px;
+    width: 50px;
+}
+
+.added__section {
+    display: grid;
+    grid-template-rows: 1fr rep();
+    width: 400px;
+    margin: 10px auto;
+}
+
+.added__poison__food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.added__food__number {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.red__poison {
+    background: rgb(227, 49, 49);
+}
+
+.green__poison {
+    background: rgb(46, 146, 46);
+}
+
+.purple__poison {
+    background: rgb(164, 49, 164);
+}
+
+.poison__delete__button {
+    margin: 10px;
+    color: black;
+}
+
+
+/* bondage */
+.bondage__wrapper {
+    background: black;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.add__bondage__pair {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+#bondage__add__button {
+    color: black;
+}
+
+.bondage__delete__button {
+    color: black;
+}
+
+.added__bondage {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: 20px auto;
+}
+
+#bondage__with {
+    height: 1.7rem;
+    color: black;
+    font-size: 1.1rem;
+    width: 60px;
+    border-radius: 5px;
+}
+
+
+/* sailing */
+.sailing__wrapper {
+    margin: auto;
+    margin-top: 4rem;
+    width: 70vw;
+    height: 30vw;
+    background-color: rgb(53, 82, 160);
+    border-radius: .75rem;
+    font-family: sans-serif;
+}
+
+.sailing__wrapper > h1 {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.sailing__btn__wrapper {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sailing__button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.sailing__input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 4rem;
+    text-align: right;
+    text-align: center;
+    padding-left: 14px;
+}

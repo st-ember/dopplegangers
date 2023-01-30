@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霧海同行</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/926771b787.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- health -->
+    <div class="health__wrapper">
+        <h1>血量</h1>
+        <div class="character__wrapper roger__health">
+            <p>羅傑</p>
+            <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
+            <input class="health__input" name="health__value" type="number" value="6" data-id="roger-health-input">
+            <button class="health-button "><i class="health-plus fa-solid fa-plus" ></i></button>
+        </div>
+
+        <div class="character__wrapper linus__health">
+            <p>萊納斯</p>
+            <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
+            <input class="health__input" type="number" readonly value="5" data-id="linus-health-input">
+            <button class="health-button"><i class="health-plus fa-solid fa-plus"></i></button>
+        </div>
+
+        <div class="character__wrapper enrique__health">
+            <p>恩里克</p>
+            <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
+            <input class="health__input" type="number" readonly value="6" data-id="enrique-health-input">
+            <button class="health-button"><i class="health-plus fa-solid fa-plus health-plus"></i></button>
+        </div>
+
+        <div class="character__wrapper henry__health">
+            <p>亨利</p>
+            <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
+            <input class="health__input" type="number" readonly value="5" data-id="henry-health-input">
+            <button class="health-button"><i class="fa-solid fa-plus health-plus"></i></button>
+        </div>
+
+        <div class="character__wrapper karter__health">
+            <p>卡特</p>
+            <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
+            <input class="health__input" type="number" readonly value="4" data-id="karter-health-input">
+            <button class="health-button"><i class="fa-solid fa-plus health-plus"></i></button>
+        </div>
+
+        <div class="character__wrapper bonnie__health">
+            <p>波妮</p>
+            <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
+            <input class="health__input" type="number" readonly value="4" data-id="bonnie-health-input">
+            <button class="health-button"><i class="fa-solid fa-plus health-plus"></i></button>
+        </div>
+    </div>
+
+<!-- battle -->
+    <div class="battle__wrapper">
+        <h1>戰鬥</h1>
+        <div class="player__wrapper" data-id="player1">
+            <div class="grid__wrapper">
+                <select class="player__name" name="players" data-id="player1__select">
+                    <option value="nothing"></option>
+                    <option value="羅傑">羅傑</option>
+                    <option value="萊納斯">萊納斯</option>
+                    <option value="恩里克">恩里克</option>
+                    <option value="亨利">亨利</option>
+                    <option value="卡特">卡特</option>
+                    <option value="波妮">波妮</option>
+                </select>
+                <p>攻擊力</p>
+                <input class="damage" data-id="damage1" placeholder="0" type="number">
+                <p>骰子點數</p>
+                <input class="dice__number" data-id="dice1" placeholder="0" type="number">
+                <p>武器加成</p>
+                <input class="weapon" data-id="weapon1" placeholder="0" type="number">
+            </div>
+            <div class="grid__wrapper">
+                <p class="total__title">總攻擊輸出</p>
+                <input class="total" data-id="total1" type="number" placeholder="0">
+            </div>
+        </div>
+
+        <h2>VS</h2>
+
+        <div class="player__wrapper" data-id="player2">
+            <div class="grid__wrapper">
+                <select class="player__name" name="players" data-id="player2__select">
+                    <option value="nothing"></option>
+                    <option value="羅傑">羅傑</option>
+                    <option value="萊納斯">萊納斯</option>
+                    <option value="恩里克">恩里克</option>
+                    <option value="亨利">亨利</option>
+                    <option value="卡特">卡特</option>
+                    <option value="波妮">波妮</option>
+                </select>
+                <p>攻擊力</p>
+                <input class="damage" data-id="damage2" placeholder="0" type="number">
+                <p>骰子點數</p>
+                <input class="dice__number" data-id="dice2" placeholder="0" type="number">
+                <p>武器加成</p>
+                <input class="weapon" data-id="weapon2" placeholder="0" type="number">
+            </div>
+            <div class="grid__wrapper">
+                <p class="total__title">總攻擊輸出</p>
+                <input class="total" data-id="total2" type="number" placeholder="0">
+            </div>
+        </div>
+    </div>
+
+<!-- poison -->
+    <div class="poison__wrapper">
+        <div class="add__poison__food">
+            <label for="food__number">編號</label>
+            <input type="text" id="food__number" name="food__number">
+            <div class="red">紅色莖塊</div>
+            <input type="checkbox" class="poison__check" id="red__check">
+            <div class="green">綠色莖塊</div>
+            <input type="checkbox" class="poison__check" id="green__check">
+            <div class="purple">紫色漿果</div>
+            <input type="checkbox" class="poison__check" id="purple__check">
+            <button id="poison__add__button">加入</button>
+        </div>
+
+        <!-- <div class="added__section" data-id="added__poison__section">
+            <div class="added__poison__food">
+                <div class="added__food__number">C2988</div>
+                <button class="poison__delete__button">刪除</button>
+            </div>
+        </div> -->
+    </div>
+<!-- bondage -->
+    <div class="bondage__wrapper">
+        <div class="add__bondage__pair">
+            <select class="player__name" name="players" id="bondage__person1">
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+
+            <p>跟</p>
+            
+            <select class="player__name" name="players" id="bondage__person2">
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+
+            <p>用</p>
+
+            <select name="bondage__with" id="bondage__with" data-id="bondage__with">
+                <option value="rope">繩子</option>
+                <option value="chain">鐵鍊</option>
+            </select>
+
+            <button id="bondage__add__button">綁在一起</button>
+        </div>
+
+        <div class="added__section" data-id="added__bondage__section">
+            <div class="added__bondage">
+                <div class="bound__person1">恩里克</div>
+                <div class="bound__with">鐵鍊</div>
+                <div class="bound__person2">亨利</div>
+                <button class="bondage__delete__button">刪除</button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- sailing -->
+    <div class="sailing__wrapper">
+        <h1>目前海哩</h1>
+        <div class="sailing__btn__wrapper">
+            <button class="sailing__button"><i class="fa-solid fa-minus" data-id="minus-button"></i></button>
+            <input class="sailing__input" type="number" readonly value="0" data-id="sailing-input">
+            <button class="sailing__button"><i class="fa-solid fa-plus" data-id="plus-button"></i></button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
