@@ -60,16 +60,16 @@
     <div class="battle__wrapper">
         <h1>戰鬥</h1>
         <div class="player__wrapper" data-id="player1">
-            <div class="grid__wrapper">
-                <select class="player__name" name="players" data-id="player1__select">
-                    <option value="nothing"></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
+            <select class="player__name" name="players" data-id="player1__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="points__wrapper">
                 <p>攻擊力</p>
                 <input class="damage" data-id="damage1" placeholder="0" type="number">
                 <p>骰子點數</p>
@@ -77,7 +77,8 @@
                 <p>武器加成</p>
                 <input class="weapon" data-id="weapon1" placeholder="0" type="number">
             </div>
-            <div class="grid__wrapper">
+                
+            <div class="total__wrapper">
                 <p class="total__title">總攻擊輸出</p>
                 <input class="total" data-id="total1" type="number" placeholder="0">
             </div>
@@ -86,16 +87,16 @@
         <h2>VS</h2>
 
         <div class="player__wrapper" data-id="player2">
-            <div class="grid__wrapper">
-                <select class="player__name" name="players" data-id="player2__select">
-                    <option value="nothing"></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
+            <select class="player__name" name="players" data-id="player2__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="points__wrapper">
                 <p>攻擊力</p>
                 <input class="damage" data-id="damage2" placeholder="0" type="number">
                 <p>骰子點數</p>
@@ -103,7 +104,8 @@
                 <p>武器加成</p>
                 <input class="weapon" data-id="weapon2" placeholder="0" type="number">
             </div>
-            <div class="grid__wrapper">
+                
+            <div class="total__wrapper">
                 <p class="total__title">總攻擊輸出</p>
                 <input class="total" data-id="total2" type="number" placeholder="0">
             </div>
@@ -112,6 +114,7 @@
 
 <!-- poison -->
     <div class="poison__wrapper">
+        <h1>有毒的食物</h1>
         <div class="add__poison__food">
             <div class="food__number__wrapper">
                 <label for="food__number">編號</label>
@@ -129,36 +132,39 @@
             <button id="poison__add__button">加入</button>
         </div>
 
-        <!-- <div class="added__section" data-id="added__poison__section">
+        <div class="added__section" data-id="added__poison__section">
             <div class="added__poison__food">
                 <div class="added__food__number">C2988</div>
                 <button class="poison__delete__button">刪除</button>
             </div>
-        </div> -->
+        </div>
     </div>
 <!-- bondage -->
     <div class="bondage__wrapper">
+        <h1>綁一起</h1>
         <div class="add__bondage__pair">
-            <select class="player__name" name="players" id="bondage__person1">
-                <option value="羅傑">羅傑</option>
-                <option value="萊納斯">萊納斯</option>
-                <option value="恩里克">恩里克</option>
-                <option value="亨利">亨利</option>
-                <option value="卡特">卡特</option>
-                <option value="波妮">波妮</option>
-            </select>
-
-            <p>跟</p>
-            
-            <select class="player__name" name="players" id="bondage__person2">
-                <option value="羅傑">羅傑</option>
-                <option value="萊納斯">萊納斯</option>
-                <option value="恩里克">恩里克</option>
-                <option value="亨利">亨利</option>
-                <option value="卡特">卡特</option>
-                <option value="波妮">波妮</option>
-            </select>
-
+            <div class="bondage__row1">
+                <select class="player__name" name="players" id="bondage__person1">
+                    <option value="nothing"></option>
+                    <option value="羅傑">羅傑</option>
+                    <option value="萊納斯">萊納斯</option>
+                    <option value="恩里克">恩里克</option>
+                    <option value="亨利">亨利</option>
+                    <option value="卡特">卡特</option>
+                    <option value="波妮">波妮</option>
+                </select>
+                <p>跟</p>
+                <select class="player__name" name="players" id="bondage__person2">
+                    <option value="nothing"></option>
+                    <option value="羅傑">羅傑</option>
+                    <option value="萊納斯">萊納斯</option>
+                    <option value="恩里克">恩里克</option>
+                    <option value="亨利">亨利</option>
+                    <option value="卡特">卡特</option>
+                    <option value="波妮">波妮</option>
+                </select>
+            </div>
+        <div class="bondage__row2">
             <p>用</p>
 
             <select name="bondage__with" id="bondage__with" data-id="bondage__with">
@@ -168,15 +174,18 @@
 
             <button id="bondage__add__button">綁在一起</button>
         </div>
+        
+            
+        </div>
 
-        <!-- <div class="added__section" data-id="added__bondage__section">
-            <div class="added__bondage">
+        <div class="added__section" data-id="added__bondage__section">
+            <!-- <div class="added__bondage">
                 <div class="bound__person1">恩里克</div>
                 <div class="bound__with">鐵鍊</div>
                 <div class="bound__person2">亨利</div>
                 <button class="bondage__delete__button">刪除</button>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
     </div>
 
 
