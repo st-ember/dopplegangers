@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,186 +10,129 @@
 </head>
 <body>
 
-    <div class="winner__popup">
-        <div class="i__wrapper">
-            <i class="fa-solid fa-x"></i>        </div>
-
-        <div class="popup__container">
-            恩里克贏了
-            <br>
-            亨利扣一滴血
-        </div>
-        
-
-        
-    </div>
-
-<div id="blur">
-
 <!-- health -->
-    <div class="health__container">
-        <h2>血量</h2>
-        <div class="character__container roger__health">
+    <div class="health__wrapper">
+        <h1>血量</h1>
+        <div class="character__wrapper roger__health">
             <p>羅傑</p>
             <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
-            <input class="health__input" name="health__value" type="number" value="6" data-id="roger-health-ipt">
+            <input class="health__input" name="health__value" type="number" value="6" data-id="roger-health-input">
             <button class="health-button "><i class="health-plus fa-solid fa-plus" ></i></button>
         </div>
 
-        <div class="character__container linus__health">
+        <div class="character__wrapper linus__health">
             <p>萊納斯</p>
             <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
-            <input class="health__input" type="number" readonly value="5" data-id="linus-health-ipt">
+            <input class="health__input" type="number" readonly value="5" data-id="linus-health-input">
             <button class="health-button"><i class="health-plus fa-solid fa-plus"></i></button>
         </div>
 
-        <div class="character__container enrique__health">
+        <div class="character__wrapper enrique__health">
             <p>恩里克</p>
             <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
-            <input class="health__input" type="number" readonly value="6" data-id="enrique-health-ipt">
+            <input class="health__input" type="number" readonly value="6" data-id="enrique-health-input">
             <button class="health-button"><i class="health-plus fa-solid fa-plus health-plus"></i></button>
         </div>
 
-        <div class="character__container henry__health">
+        <div class="character__wrapper henry__health">
             <p>亨利</p>
             <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
-            <input class="health__input" type="number" readonly value="5" data-id="henry-health-ipt">
+            <input class="health__input" type="number" readonly value="5" data-id="henry-health-input">
             <button class="health-button"><i class="fa-solid fa-plus health-plus"></i></button>
         </div>
 
-        <div class="character__container karter__health">
+        <div class="character__wrapper karter__health">
             <p>卡特</p>
             <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
-            <input class="health__input" type="number" readonly value="4" data-id="karter-health-ipt">
+            <input class="health__input" type="number" readonly value="4" data-id="karter-health-input">
             <button class="health-button"><i class="fa-solid fa-plus health-plus"></i></button>
         </div>
 
-        <div class="character__container bonnie__health">
+        <div class="character__wrapper bonnie__health">
             <p>波妮</p>
             <button class="health-button"><i class="health-minus fa-solid fa-minus"></i></button>
-            <input class="health__input" type="number" readonly value="4" data-id="bonnie-health-ipt">
+            <input class="health__input" type="number" readonly value="4" data-id="bonnie-health-input">
             <button class="health-button"><i class="fa-solid fa-plus health-plus"></i></button>
         </div>
     </div>
 
 <!-- battle -->
-    <div class="battle__container">
-        <h2>戰鬥</h2>
-        <form data-id="battle-form">
-            <div class="player__container" data-id="player1">
-                <select class="player__name" name="players" data-id="player1-slt">
-                    <option value=""></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
-                <div class="points__container">
-                    <p>攻擊力</p>
-                    <input class="damage" data-id="damage1" placeholder="0" type="number" readonly>
-                    <p>骰子點數</p>
-                    <select class="dice__number" data-id="dice1">
-                        <option value="0">0</option>
-                        <option value="0">1</option>
-                        <option value="0">2</option>
-                        <option value="0">3</option>
-                        <option value="0">4</option>
-                        <option value="0">5</option>
-                        <option value="0">6</option>
-                    </select>
-                    <p>武器加成</p>
-                    <select class="weapon" data-id="weapon1">
-                        <option value="0">0</option>
-                        <option value="0">1</option>
-                        <option value="0">2</option>
-                        <option value="0">3</option>
-                        <option value="0">4</option>
-                        <option value="0">5</option>
-                        <option value="0">6</option>
-                    </select>
-                </div>
-                    
-                <div class="total__container">
-                    <p class="total__title">總攻擊輸出</p>
-                    <input class="total" data-id="total1" type="number" placeholder="0">
-                </div>
+    <div class="battle__wrapper">
+        <h1>戰鬥</h1>
+        <div class="player__wrapper" data-id="player1">
+            <select class="player__name" name="players" data-id="player1__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="points__wrapper">
+                <p>攻擊力</p>
+                <input class="damage" data-id="damage1" placeholder="0" type="number">
+                <p>骰子點數</p>
+                <input class="dice__number" data-id="dice1" placeholder="0" type="number">
+                <p>武器加成</p>
+                <input class="weapon" data-id="weapon1" placeholder="0" type="number">
             </div>
-    
-            <h3>VS</h3>
-    
-            <div class="player__container" data-id="player2">
-                <select class="player__name" name="players" data-id="player2-slt">
-                    <option value=""></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
-                <div class="points__container">
-                    <p>攻擊力</p>
-                    <input class="damage" data-id="damage2" placeholder="0" type="number" readonly>
-                    <p>骰子點數</p>
-                    <select class="dice__number" data-id="dice2">
-                        <option value="0">0</option>
-                        <option value="0">1</option>
-                        <option value="0">2</option>
-                        <option value="0">3</option>
-                        <option value="0">4</option>
-                        <option value="0">5</option>
-                        <option value="0">6</option>
-                    </select>                    
-                    <p>武器加成</p>
-                    <select class="weapon" data-id="weapon2">
-                        <option value="0">0</option>
-                        <option value="0">1</option>
-                        <option value="0">2</option>
-                        <option value="0">3</option>
-                        <option value="0">4</option>
-                        <option value="0">5</option>
-                        <option value="0">6</option>
-                    </select>                
-                </div>
-                    
-                <div class="total__container">
-                    <p class="total__title">總攻擊輸出</p>
-                    <input class="total" data-id="total2" type="number" placeholder="0">
-                </div>
+                
+            <div class="total__wrapper">
+                <p class="total__title">總攻擊輸出</p>
+                <input class="total" data-id="total1" type="number" placeholder="0">
             </div>
-            <div class="btn__wrapper">
-                <button id="fight__button" data-id="fight-btn">拼輸贏</button>
+        </div>
+
+        <h2>VS</h2>
+
+        <div class="player__wrapper" data-id="player2">
+            <select class="player__name" name="players" data-id="player2__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="points__wrapper">
+                <p>攻擊力</p>
+                <input class="damage" data-id="damage2" placeholder="0" type="number">
+                <p>骰子點數</p>
+                <input class="dice__number" data-id="dice2" placeholder="0" type="number">
+                <p>武器加成</p>
+                <input class="weapon" data-id="weapon2" placeholder="0" type="number">
             </div>
-        </form>
+                
+            <div class="total__wrapper">
+                <p class="total__title">總攻擊輸出</p>
+                <input class="total" data-id="total2" type="number" placeholder="0">
+            </div>
+        </div>
     </div>
 
 <!-- poison -->
-    <div class="poison__container">
-        <h2>有毒的食物</h2>
+    <div class="poison__wrapper">
+        <h1>有毒的食物</h1>
         <div class="add__poison__food">
-            <form data-id="poison-form">
-                <div class="food__number__container">
-                    <label>編號</label>
-                    <input type="text" id="food__number" name="food__number" data-id="food-number-ipt">
-                </div>
-        
-                <div class="poison__row2">
-                    <div class="red">紅色莖塊</div>
-                    <input type="radio" name="poison__radio" class="poison__check" id="red__check" data-id="red-check">
-                    <div class="green">綠色莖塊</div>
-                    <input type="radio" name="poison__radio" class="poison__check" id="green__check" data-id="green-check">
-                    <div class="purple">紫色漿果</div>
-                    <input type="radio" name="poison__radio" class="poison__check" id="purple__check" data-id="purple-check">
-                </div>
-                <div class="btn__wrapper">
-                    <button id="poison__add__button" data-id="poison-add-btn">加入</button>
-                </div>
-            </form>
+            <div class="food__number__wrapper">
+                <label for="food__number">編號</label>
+                <input type="text" id="food__number" name="food__number">
+            </div>
+    
+            <div class="poison__row2">
+                <div class="red">紅色莖塊</div>
+                <input type="radio" name="poison__radio" class="poison__check" id="red__check">
+                <div class="green">綠色莖塊</div>
+                <input type="radio" name="poison__radio" class="poison__check" id="green__check">
+                <div class="purple">紫色漿果</div>
+                <input type="radio" name="poison__radio" class="poison__check" id="purple__check">
+            </div>
+            <button id="poison__add__button">加入</button>
         </div>
 
-        <div class="added__section" data-id="added-poison-section">
+        <div class="added__section" data-id="added__poison__section">
             <!-- <div class="added__poison__food">
                 <div class="added__food__number">C2988</div>
                 <button class="poison__delete__button">刪除</button>
@@ -197,46 +140,45 @@
         </div>
     </div>
 <!-- bondage -->
-    <div class="bondage__container">
-        <h2>綁一起</h2>
+    <div class="bondage__wrapper">
+        <h1>綁一起</h1>
         <div class="add__bondage__pair">
-            <form data-id="bondage-form">
-                <div class="bondage__row1">
-                    <select class="player__name" name="players" id="bondage__person1" data-id="bondage-person1">
-                        <option value=""></option>
-                        <option value="羅傑">羅傑</option>
-                        <option value="萊納斯">萊納斯</option>
-                        <option value="恩里克">恩里克</option>
-                        <option value="亨利">亨利</option>
-                        <option value="卡特">卡特</option>
-                        <option value="波妮">波妮</option>
-                    </select>
-                    <p>跟</p>
-                    <select class="player__name" name="players" id="bondage__person2" data-id="bondage-person2">
-                        <option value=""></option>
-                        <option value="羅傑">羅傑</option>
-                        <option value="萊納斯">萊納斯</option>
-                        <option value="恩里克">恩里克</option>
-                        <option value="亨利">亨利</option>
-                        <option value="卡特">卡特</option>
-                        <option value="波妮">波妮</option>
-                    </select>
-                </div>
-                <div class="bondage__row2">
-                    <p>用</p>
+            <div class="bondage__row1">
+                <select class="player__name" name="players" id="bondage__person1">
+                    <option value="nothing"></option>
+                    <option value="羅傑">羅傑</option>
+                    <option value="萊納斯">萊納斯</option>
+                    <option value="恩里克">恩里克</option>
+                    <option value="亨利">亨利</option>
+                    <option value="卡特">卡特</option>
+                    <option value="波妮">波妮</option>
+                </select>
+                <p>跟</p>
+                <select class="player__name" name="players" id="bondage__person2">
+                    <option value="nothing"></option>
+                    <option value="羅傑">羅傑</option>
+                    <option value="萊納斯">萊納斯</option>
+                    <option value="恩里克">恩里克</option>
+                    <option value="亨利">亨利</option>
+                    <option value="卡特">卡特</option>
+                    <option value="波妮">波妮</option>
+                </select>
+            </div>
+        <div class="bondage__row2">
+            <p>用</p>
+
+            <select name="bondage__with" id="bondage__with" data-id="bondage__with">
+                <option value="rope">繩子</option>
+                <option value="chain">鐵鍊</option>
+            </select>
+
+            <button id="bondage__add__button">綁在一起</button>
+        </div>
         
-                    <select name="bondage__with" id="bondage__with" data-id="bondage-with">
-                        <option value=""></option>
-                        <option value="rope">繩子</option>
-                        <option value="chain">鐵鍊</option>
-                    </select>
-        
-                    <button id="bondage__add__button" data-id="bondage-add-btn">綁在一起</button>
-                </div>
-            </form>
+            
         </div>
 
-        <div class="added__section" data-id="added-bondage-section">
+        <div class="added__section" data-id="added__bondage__section">
             <!-- <div class="added__bondage">
                 <div class="bound__person1">恩里克</div>
                 <div class="bound__with">鐵鍊</div>
@@ -248,107 +190,105 @@
 
 
 <!-- sailing -->
-    <div class="sailing__container">
-        <form data-id="sailing-form">
-            <div class="navigator">
-                <p>航海士</p>
-                <select class="player__name" name="players" data-id="navigator-select">
-                    <option value=""></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
-                <div class="direction">
-                    <label for="forward">往前</label>
-                    <input type="radio" name="direction" data-id="forward" disabled>
-                    <label for="no__ring">往後</label>
-                    <input type="radio" name="direction" data-id="backward" disabled>
-                    <label for="no__ring">徘徊</label>
-                    <input type="radio" name="direction" data-id="linger" disabled>
-                </div>
-                <div class="ring">
-                    <label for="ring">有戒指</label>
-                    <input type="radio" name="ring" data-id="ring" disabled>
-                    <label for="no__ring">沒戒指</label>
-                    <input type="radio" name="ring" data-id="no__ring" disabled>
-                </div>
+    <div class="sailing__wrapper">
+        <div class="navigator">
+            <p>航海士</p>
+            <select class="player__name" name="players" data-id="navigator__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="direction">
+                <label for="forward">往前</label>
+                <input type="radio" name="direction" data-id="forward">
+                <label for="no__ring">往後</label>
+                <input type="radio" name="direction" data-id="backward">
+                <label for="no__ring">徘徊</label>
+                <input type="radio" name="direction" data-id="linger">
             </div>
-    
-            <div class="sailor1" data-id="sailor1">
-                <p>水手1</p>
-                <select class="player__name" name="players" data-id="sailor1-slt">
-                    <option value=""></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
-                <div class="row">
-                    <label for="sailor1__row">划船</label>
-                    <input type="radio" name="sailor1__row" data-id="row1" disabled>
-                    <label for="sailor1__prank">搗亂</label>
-                    <input type="radio" name="sailor1__row" disabled>
-                </div>                
+            <div class="ring">
+                <label for="ring">有戒指</label>
+                <input type="radio" name="ring" data-id="ring">
+                <label for="no__ring">沒戒指</label>
+                <input type="radio" name="ring" data-id="no__ring">
             </div>
-    
-            <div class="sailor2" data-id="sailor2">
-                <p>水手2</p>
-                <select class="player__name" name="players" data-id="sailor2-slt">
-                    <option value=""></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
-                <div class="row">
-                    <label for="sailor2__row">划船</label>
-                    <input type="radio" name="sailor2__row" data-id="row2" disabled>
-                    <label for="sailor2__prank">搗亂</label>
-                    <input type="radio" name="sailor2__row" disabled>
-                </div>                
-            </div>
-    
-            <div class="sailor3" data-id="sailor3">
-                <p>水手3</p>
-                <select class="player__name" name="players" data-id="sailor3-slt">
-                    <option value=""></option>
-                    <option value="羅傑">羅傑</option>
-                    <option value="萊納斯">萊納斯</option>
-                    <option value="恩里克">恩里克</option>
-                    <option value="亨利">亨利</option>
-                    <option value="卡特">卡特</option>
-                    <option value="波妮">波妮</option>
-                </select>
-                <div class="row">
-                    <label for="sailor3__row">划船</label>
-                    <input type="radio" name="sailor3__row" data-id="row3" disabled>
-                    <label for="sailor3__prank">搗亂</label>
-                    <input type="radio" name="sailor3__row" disabled>
-                </div>                
-            </div>
-    
-            <button id="sailing__submit" data-id="sailing-submit">送出</button>
-        </form>
+        </div>
 
+        <div class="sailor1" data-id="sailor1">
+            <p>水手1</p>
+            <select class="player__name" name="players" data-id="sailor1__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="row">
+                <label for="sailor1__row">划船</label>
+                <input type="radio" name="sailor1__row" data-id="row1">
+                <label for="sailor1__prank">搗亂</label>
+                <input type="radio" name="sailor1__row">
+                <input type="text">
+            </div>                
+        </div>
 
-        <h2>目前海哩</h2>
-        <div class="sailing__btn__container">
+        <div class="sailor2" data-id="sailor2">
+            <p>水手2</p>
+            <select class="player__name" name="players" data-id="sailor2__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="row">
+                <label for="sailor2__row">划船</label>
+                <input type="radio" name="sailor2__row" data-id="row2">
+                <label for="sailor2__prank">搗亂</label>
+                <input type="radio" name="sailor2__row">
+                <input type="text">
+            </div>                
+        </div>
+
+        <div class="sailor3" data-id="sailor3">
+            <p>水手3</p>
+            <select class="player__name" name="players" data-id="sailor3__select">
+                <option value="nothing"></option>
+                <option value="羅傑">羅傑</option>
+                <option value="萊納斯">萊納斯</option>
+                <option value="恩里克">恩里克</option>
+                <option value="亨利">亨利</option>
+                <option value="卡特">卡特</option>
+                <option value="波妮">波妮</option>
+            </select>
+            <div class="row">
+                <label for="sailor3__row">划船</label>
+                <input type="radio" name="sailor3__row" data-id="row3">
+                <label for="sailor3__prank">搗亂</label>
+                <input type="radio" name="sailor3__row">
+                <input type="text">
+            </div>                
+        </div>
+
+        <button data-id="sailing__submit" id="sailing__submit__btn">送出</button>
+
+        <h1>目前海哩</h1>
+        <div class="sailing__btn__wrapper">
             <button class="sailing__button"><i class="fa-solid fa-minus" data-id="minus-button"></i></button>
-            <input class="sailing__input" type="number" readonly value="0" data-id="sailing-ipt" min="0" max="6">
+            <input class="sailing__input" type="number" readonly value="0" data-id="sailing-input" min="0" max="6">
             <button class="sailing__button"><i class="fa-solid fa-plus" data-id="plus-button"></i></button>
         </div>
     </div>
-</div>
 
     
-    <script src="script.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>

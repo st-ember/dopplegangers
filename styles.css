@@ -15,19 +15,12 @@ a {
     text-decoration: none;
 }
 
-h2 {
+h1 {
     text-align: center;
-    font-size: 30px;
-    margin: 10px;
-}
-
-h3 {
-    text-align: center;
-    margin: 10px;
 }
 
 /* health */
-.health__container {
+.health__wrapper {
     display: grid;
     grid-template-rows: repeat(1fr);
     gap: 1rem;
@@ -36,7 +29,12 @@ h3 {
     place-items: center;
 }
 
-.character__container {
+.health__wrapper > h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.character__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +44,7 @@ h3 {
     padding: 10px;
 }
 
-.character__container > p {
+.character__wrapper > p {
     font-size: 24px;
     margin-right: 10px;
 }
@@ -59,7 +57,7 @@ h3 {
     cursor: pointer;
 }
 
-.character__container > input {
+.character__wrapper > input {
     background: none;
     border: none;
     color: white;
@@ -69,12 +67,21 @@ h3 {
 }
 
 /* battle */
-.player__container > select {
+.battle__wrapper > h1, h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.battle__wrapper > h1 {
+    margin-top: 30px;
+}
+
+.player__wrapper > select {
     width: 100px;
     margin: 10px auto;
 }
 
-.player__container {
+.player__wrapper {
     margin: 0 auto;
     padding: 10px;
     display: grid;
@@ -85,22 +92,22 @@ h3 {
     border-radius: 7px;
 }
 
-.points__container, .total__container {
+.points__wrapper, .total__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.player__container > p {
+.player__wrapper > p {
     font-size: 1.2rem;
     margin: 1rem;
 }
 
-.player__container > input {
+.player__wrapper > input {
     height: 2rem;
 }
 
-.player__container ::placeholder {
+.player__wrapper ::placeholder {
     color: white;
 }
 
@@ -113,7 +120,7 @@ h3 {
     margin: 5px;
 }
 
-.grid__container > p {
+.grid__wrapper > p {
     text-align: center;
 }
 
@@ -132,50 +139,6 @@ h3 {
     margin-left: 5px;
 }
 
-.btn__wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    margin: auto;
-}
-
-#fight__button {
-    margin: 5px;
-    color: black;
-    font-size: 20px;
-}
-
-/* blur */
-#blur.active {
-    filter: blur(10px);
-}
-
-.winner__popup {
-    height: 200px;
-    width: 200px;
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 40%;
-    background: white;
-    z-index: 1;
-}
-
-.popup__container {
-    color: black;
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-}
-
-
-.i__wrapper > i {
-    color: black;
-    padding: 10px;
-}
-
 /* number input no arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -185,19 +148,18 @@ input::-webkit-inner-spin-button {
 
 
 
-
 /* poison */
-.poison__container {
+.poison__wrapper {
     width: 340px;
     margin: 30px auto;
 }
 
-.poison__container h2 {
+.poison__wrapper h1 {
     margin-top: 30px;
     text-align: center;
 }
 
-.poison__container label {
+.poison__wrapper label {
     font-size: 24px;
 }
 
@@ -210,7 +172,7 @@ input::-webkit-inner-spin-button {
     border-radius: 7px;
 }
 
-.food__number__container {
+.food__number__wrapper {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -292,12 +254,12 @@ input::-webkit-inner-spin-button {
 
 
 /* bondage */
-.bondage__container {
+.bondage__wrapper {
     width: 340px;
     margin: auto;
 }
 
-.bondage__container > h2 {
+.bondage__wrapper > h1 {
     margin: 10px;
 }
 
@@ -318,7 +280,7 @@ input::-webkit-inner-spin-button {
     padding: 10px;
 }
 
-.bondage__container p {
+.bondage__wrapper p {
     font-size: 20px;
     margin: 0 10px;
     color: rgb(57, 56, 44);
@@ -355,21 +317,21 @@ input::-webkit-inner-spin-button {
 
 
 /* sailing */
-.sailing__container {
+.sailing__wrapper {
     margin: 20px auto;
     width: 340px;
     background-color: rgb(53, 82, 160);
     border-radius: 7px;
 }
 
-.sailing__container > h2 {
+.sailing__wrapper > h1 {
     padding-top: 15px;
     text-align: center;
     color: white;
     font-size: 2.5rem;
 }
 
-.sailing__btn__container {
+.sailing__btn__wrapper {
     width: 50%;
     margin: 10px auto;
     display: flex;
@@ -395,6 +357,11 @@ input::-webkit-inner-spin-button {
     padding-left: 14px;
 }
 
-#sailing__submit {
+#sailing__submit__btn {
+    color: black;
+    font-size: 16px;
+}
+
+.row > input {
     color: black;
 }
